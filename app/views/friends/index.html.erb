@@ -7,7 +7,6 @@
         <th>Email</th>
         <th>Phone</th>
         <th>Twitter</th>
-        <th></th>
       </tr>
     </thead>
     
@@ -21,7 +20,6 @@
             <td><%= friend.email%></td>
             <td><%= friend.phone%></td>
             <td><%= friend.twitter%></td>
-            <td><%= link_to t("Delete"), friend, data: { "turbo-method": :delete, turbo_confirm: "Are you sure?" }, class:"btn btn-outline-danger btn-sm" %></td>
           </tr>
         <% end %>
       <% end %>
@@ -34,8 +32,17 @@
 
 <% else %>
 
-  <h1>Hello World</h1>
-  This is my first rails page
+  <div class="card">
+  <h5 class="card-header">Hello World!</h5>
+  <div class="card-body">
+    <h5 class="card-title"> Welcome to The Friends App!
+</h5>
+    <p class="card-text">Connect with the ones you love.</p>
+          <%= link_to 'Sign Up', new_user_registration_path, class: "btn btn-primary" %>
+
+          <%= link_to 'Sign In', new_user_session_path, class: "btn btn-secondary" %>
+  </div>
+</div>
 
 
 <% end %>
