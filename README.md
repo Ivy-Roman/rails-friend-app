@@ -3,9 +3,9 @@
 Friend App is a web application built with Ruby on Rails with basic CRUD functionalities. It allows the user to register, login, list and create new friend contacts. The app was created to familiarise myself and get started using the framework.
 
 ## Technology Used
-Ruby v3.2.0
-Rails v7.0.4.2
-Bootstrap v4.6
+- Ruby v3.2.0
+- Rails v7.0.4.2
+- Bootstrap v4.6
 
 ## System dependencies
 - Ruby
